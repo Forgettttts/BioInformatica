@@ -69,18 +69,10 @@ def encontrar_10_palindromos_adn(seq):
     return [palindromo for longitud, palindromo in resultados_ordenados]
 
 
-def leer_secuencia_final(path="secuenciaCompleta.txt"):
-    """
-    Lee el contenido de secuenciaCompleta.txt y lo devuelve como una cadena. El archivo en cuestión tiene la secuencia de Genome assembly ASM18338v1 (https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000183385.1/)
-    """
-    contenido = open(path, "r", encoding="utf-8").read()
-    return contenido
-
-
-secuenciaReal = leer_secuencia_final("secuenciaCompleta.txt")
-
 # Recorreremos la salida de la funcion encontrar_10_palindromos_adn con la secuencia real
-listita = encontrar_10_palindromos_adn(secuenciaReal)
+listita = encontrar_10_palindromos_adn(
+    open("secuenciaCompleta.txt", "r", encoding="utf-8").read()
+)
 
 print("\n TOP 10 PALÍNDROMOS MÁS LARGOS ENCONTRADOS:\n")
 
