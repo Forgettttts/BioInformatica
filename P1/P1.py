@@ -66,15 +66,15 @@ def encontrar_10_palindromos_adn(seq):
             else:
                 break
     resultados_ordenados = sorted(top_10, key=lambda x: x[0], reverse=True)
-    return [palindromo for longitud, palindromo in resultados_ordenados]
+    top = [palindromo for longitud, palindromo in resultados_ordenados]
+
+    print("\n TOP 10 PALÍNDROMOS MÁS LARGOS ENCONTRADOS:\n")
+
+    for i, palindromo in enumerate(top, 1):
+        print(f"{i:^8} {palindromo}")
 
 
 # Recorreremos la salida de la funcion encontrar_10_palindromos_adn con la secuencia real
 listita = encontrar_10_palindromos_adn(
     open("secuenciaCompleta.txt", "r", encoding="utf-8").read()
 )
-
-print("\n TOP 10 PALÍNDROMOS MÁS LARGOS ENCONTRADOS:\n")
-
-for i, palindromo in enumerate(listita, 1):
-    print(f"{i:^8} {palindromo}")
