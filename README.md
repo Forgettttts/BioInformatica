@@ -1,5 +1,5 @@
 # 📓Tarea 2
-**Fecha**: 10 de Noviembre del 2025  
+**Fecha**: 10 de Noviembre del 2025. 
 **Integrantes**:
 - Alan Zapata Silva (*ROL: 201956567-2*).
 - Martin Pino Cornejo (*ROL: -*).
