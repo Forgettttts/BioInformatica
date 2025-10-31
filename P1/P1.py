@@ -15,21 +15,18 @@ def encontrar_10_palindromos_adn(seq):
         # --- CASO 1: Palíndromo de longitud IMPAR
         l = i - 1
         r = i + 1
-        print(f"Iteración: {i}, izquierda: {l}, derecha: {r}")
         while l >= 0 and r < n:
             # print(f"\tizquierda: {l}, derecha: {r}")
 
             # Comprobar si las bases son complementarias
             base_izquierda = seq[l]
             base_derecha = seq[r]
-            print(f"\tComparando {base_izquierda} (izq) con {base_derecha} (der)")
 
             if (COMPLEMENTO[base_izquierda] == base_derecha) or (
                 base_derecha == base_izquierda
             ):
                 # Si lo son, hemos encontrado un palíndromo
                 longitud = r - l + 1
-                print(f"\t  Longitud palíndromo: {longitud}")
                 # Usamos el heap para guardar los 10 mejores
                 if len(top_10) < 10:
                     # Si el heap no está lleno, simplemente añadimos el nuevo
@@ -59,7 +56,6 @@ def encontrar_10_palindromos_adn(seq):
             ):
                 longitud = r - l + 1
 
-                print(f"Longitud palíndromo: {longitud}")
                 if len(top_10) < 10:
                     heapq.heappush(top_10, (longitud, seq[l : r + 1]))
                 elif longitud > top_10[0][0]:
@@ -82,10 +78,11 @@ def leer_secuencia_final(path="secuenciaCompleta.txt"):
 
 
 secuenciaReal = leer_secuencia_final("secuenciaCompleta.txt")
-secuencia = "AGCGT"
 
 # Recorreremos la salida de la funcion encontrar_10_palindromos_adn con la secuencia real
-listita = encontrar_10_palindromos_adn(secuencia)
-print("Palíndromos encontrados:")
-for palindromo in listita:
-    print(palindromo)
+listita = encontrar_10_palindromos_adn(secuenciaReal)
+
+print("\n TOP 10 PALÍNDROMOS MÁS LARGOS ENCONTRADOS:\n")
+
+for i, palindromo in enumerate(listita, 1):
+    print(f"{i:^8} {palindromo}")
