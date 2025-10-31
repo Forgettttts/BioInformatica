@@ -9,6 +9,7 @@
 - Biopython
 - ClustalW2 instalado y accesible desde la terminal (PATH)
 - Matplotlib
+- heapq
 
 ## 📐 Instrucciones de ejecución:
 Cada archivo debe ejecutarse según la pregunta que corresponda:
