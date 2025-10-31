@@ -75,6 +75,6 @@ def encontrar_10_palindromos_adn(seq):
 
 
 # Recorreremos la salida de la funcion encontrar_10_palindromos_adn con la secuencia real
-listita = encontrar_10_palindromos_adn(
+encontrar_10_palindromos_adn(
     open("secuenciaCompleta.txt", "r", encoding="utf-8").read()
 )
