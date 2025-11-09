@@ -2,7 +2,7 @@
 **Fecha**: 10 de Noviembre del 2025. 
 **Integrantes**:
 - Alan Zapata Silva (*ROL: 201956567-2*).
-- Martin Pino Cornejo (*ROL: -*).
+- Martin Pino Cornejo (*ROL: 202073528-k*).
 
 ## 📝 Requerimientos:
 - Python 3.13 o superior
