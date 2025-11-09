@@ -122,6 +122,12 @@ def process_fna(input_file, output_random, output_maxgc, seed=None):
     print(f"Resultados guardados en:\n  - {output_random}\n  - {output_maxgc}")
 
 
+def gc(seq):
+    """Calcula el %GC total de una secuencia."""
+    seq = seq.upper()
+    return sum(1 for b in seq if b in "GC") / len(seq) * 100
+
+
 if __name__ == "__main__":
     input_file = "cds.fna"
     output_random = "cds_random.fna"
@@ -129,3 +135,13 @@ if __name__ == "__main__":
     seed = None
 
     process_fna(input_file, output_random, output_maxgc, seed=seed)
+
+    for record in SeqIO.parse(input_file, "fasta"):
+        print(f"\n[{record.id}]")
+        print("GC% original :", f"{gc(str(record.seq)):.2f}%")
+
+    for record in SeqIO.parse(output_random, "fasta"):
+        print("GC% random   :", f"{gc(str(record.seq)):.2f}%")
+
+    for record in SeqIO.parse(output_maxgc, "fasta"):
+        print("GC% maxGC    :", f"{gc(str(record.seq)):.2f}%")
