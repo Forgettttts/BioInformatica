@@ -1,5 +1,5 @@
 # 📓Tarea 3
-**Fecha**: 4 de Diciembre del 2025. 
+**Fecha**: 4 de Diciembre del 2025.  
 **Integrantes**:
 - Alan Zapata Silva (*ROL: 201956567-2*).
 - Martin Pino Cornejo (*ROL: 202073528-k*).
