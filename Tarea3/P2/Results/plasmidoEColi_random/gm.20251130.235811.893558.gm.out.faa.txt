@@ -1,0 +1,2 @@
+>orf_1 (AP027466.1 Escherichia coli 15.01CC plasmid p15.01CC_1 DNA, complete sequence, 7593 - 7474) translated
+MAVVGWLHWYPTLGDEQLAGTGAPRTLGARPDSNASRDV*

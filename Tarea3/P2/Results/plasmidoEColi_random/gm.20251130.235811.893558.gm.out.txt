@@ -1,0 +1,51 @@
+                              GENEMARK PREDICTIONS
+
+Sequence: AP027466.1 Escherichia coli 15.01CC plasmid p15.01CC_1 DNA, complete sequence
+Sequence file: seq.fna
+Sequence length: 11802
+GC Content:  61.45%
+Window length: 96
+Window step: 12
+Threshold value: 0.500
+---
+Matrix: Escherichia_coli_K_12_substr__MG1655
+Matrix author: -
+Matrix order: 4
+
+List of Open reading frames predicted as CDSs, shown with alternate starts
+(regions from start to stop codon w/ coding function >0.50)
+
+Left      Right     DNA         Coding Avg   Start
+end       end       Strand      Frame  Prob  Prob
+--------  --------  ----------  -----  ----  ----
+
+    7474      7593  complement  fr 3   0.51  0.96  
+
+List of Regions of interest
+(regions from stop to stop codon w/ a signal in between)
+
+   LEnd      REnd    Strand      Frame
+ --------  --------  ----------- -----
+     1598      1933  direct      fr 2
+     3237      3563  direct      fr 3
+     3340      3834  direct      fr 1
+     3734      4111  direct      fr 2
+     4803      5129  direct      fr 3
+     5005      5466  complement  fr 3
+     5909      6148  direct      fr 2
+     6553      6888  direct      fr 1
+     6758      7228  direct      fr 2
+     7474      7950  complement  fr 3
+     7555      7788  direct      fr 1
+     8199      8573  complement  fr 2
+     9407      9730  direct      fr 2
+    10635     10835  direct      fr 3
+    10833     11054  direct      fr 3
+
+
+--------------------
+ABOUT THE MATRIX USED:
+
+Training set derived by GeneMarkS, 4.27 September 2014
+Tue Sep 23 14:58:24 2014
+
